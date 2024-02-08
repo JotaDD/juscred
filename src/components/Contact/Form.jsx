@@ -36,19 +36,19 @@ function Form() {
 
   return (
     <div className="flex flex-col gap-4">
-      <h3 className="text-jc-light-yellow text-xl">
+      <h3 className="text-jc-light-yellow text-xl xl:text-3xl font-bold">
         Entre em contato conosco!
       </h3>
-      <form className="grid grid-cols-1 lg:grid-cols-2 gap-y-2">
+      <form className="grid grid-cols-1 lg:grid-cols-2 gap-y-5">
         <input
-          className="p-1 outline-none placeholder-jc-dark-blue focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 xl:text-xl"
           placeholder="Nome"
           value={formValues.nome}
           name="nome"
           onChange={(e) => handleChange(e)}
         />
         <IMaskInput
-          className="p-1 outline-none placeholder-jc-dark-blue focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 xl:text-xl"
           placeholder="Telefone"
           value={formValues.telefone}
           name="telefone"
@@ -56,7 +56,7 @@ function Form() {
           mask="(21) 00000-0000"
         />
         <IMaskInput
-          className="p-1 outline-none placeholder-jc-dark-blue focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 xl:text-xl"
           placeholder="CPF (opcional)"
           value={formValues.cpf}
           name="cpf"
@@ -64,14 +64,14 @@ function Form() {
           mask="000.000.000-00"
         />
         <input
-          className="p-1 outline-none placeholder-jc-dark-blue focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 xl:text-xl"
           placeholder="Devedor (opcional)"
           value={formValues.devedor}
           name="devedor"
           onChange={(e) => handleChange(e)}
         />
         <input
-          className="w-full p-1 outline-none placeholder-jc-dark-blue focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 lg:col-span-2"
+          className="w-full p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 lg:col-span-2 xl:text-xl"
           placeholder="Número do processo (opcional)"
           value={formValues.processo}
           name="processo"
@@ -84,7 +84,7 @@ function Form() {
         <p className="text-red-500">{validation.message}</p>
       )}
       <button
-        className="bg-jc-light-yellow w-32 p-2 rounded-md"
+        className="bg-jc-light-yellow w-32 p-3 pt-4 rounded-md xl:text-xl text-center"
         onClick={() => handleSubmit()}
       >
         Tudo certo

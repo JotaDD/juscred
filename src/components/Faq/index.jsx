@@ -1,15 +1,17 @@
+import Title from '../Contact/Title'
+import Accordion from './Accordion'
 import faq from '@/data/faq'
+
 const Faq = () => {
   return (
-    <div>
+    <div className="container flex flex-col justify-center">
+      <Title />
       {faq.map((item, index) => (
-        <details key={index}>
-          <summary>
-            {item.title}
-            <button className="toggle-button" />
-          </summary>
-          <p>{item.description}</p>
-        </details>
+        <Accordion
+          key={index}
+          title={item.title}
+          description={item.description}
+        />
       ))}
     </div>
   )

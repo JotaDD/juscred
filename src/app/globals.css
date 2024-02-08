@@ -3,3 +3,90 @@
 @tailwind utilities;
 
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.toggle-button {
+  width: 30px;
+  height: 30px;
+  background-color: #182D51;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:before,
+.toggle-button:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+.toggle-button:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* Animação */
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateOut {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Adiciona a classe 'active' para ativar a animação */
+.toggle-button.active {
+  background-color: #EAEAEA;
+}
+
+.toggle-button.active:before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.toggle-button.active:after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.toggle-button.active .toggle-button:before,
+.toggle-button.active .toggle-button:after {
+  animation: rotateIn 0.3s ease forwards;
+}
+
+.toggle-button:not(.active) .toggle-button:before,
+.toggle-button:not(.active) .toggle-button:after {
+  animation: rotateOut 0.3s ease forwards;
+}

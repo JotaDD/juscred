@@ -6,16 +6,14 @@ const Accordion = ({ title, description }) => {
   return (
     <>
       <details
-        className="flex justify-between cursor-pointer"
+        className=" text-[#6F6C90] text-sm open:transition open:duration-700 close:transition close:duration-700 flex justify-between cursor-pointer border-b-2 border-gray-200 p-4"
         onToggle={() => setIsOpen(!isOpen)}
       >
-        <summary className="font-bold flex justify-between items-baseline ">
+        <summary className=" text-jc-dark-blue font-bold flex justify-between items-baseline ">
           <span>{title}</span>
           <ButtonSVG isOpen={isOpen} />
         </summary>
-        <p className="overflow-hidden transition-all duration-300 ease-in-out">
-          {description}
-        </p>
+        <p className="w-[90%]">{description}</p>
       </details>
     </>
   )

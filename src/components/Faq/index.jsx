@@ -1,10 +1,10 @@
-import Title from '../Contact/Title'
+import Title from './Title'
 import Accordion from './Accordion'
 import faq from '@/data/faq'
 
 const Faq = () => {
   return (
-    <div className="container flex flex-col justify-center">
+    <div className="container flex flex-col px-8 justify-center">
       <Title />
       {faq.map((item, index) => (
         <Accordion

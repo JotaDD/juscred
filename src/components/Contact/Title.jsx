@@ -7,7 +7,7 @@ function Title() {
         Solicite um orçamento sem qualquer custo ou compromisso.
       </h2>
       <p className="text-white">
-        Preencha com seus dados o formulário ao lado e seha redirecionado agora
+        Preencha com seus dados o formulário ao lado e seja redirecionado agora
         para o nosso WhatsApp.
       </p>
     </div>

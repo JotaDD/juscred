@@ -11,7 +11,7 @@ const ButtonSVG = ({ isOpen }) => {
         width="16"
         height="2"
         rx="1"
-        className={`transform origin-center transition duration-200 ease-out ${
+        className={`transform origin-center transition duration-500 ease-out ${
           isOpen && '!rotate-180'
         }`}
       />
@@ -20,7 +20,7 @@ const ButtonSVG = ({ isOpen }) => {
         width="16"
         height="2"
         rx="1"
-        className={`transform origin-center rotate-90 transition duration-200 ease-out ${
+        className={`transform origin-center rotate-90 transition duration-500 ease-out ${
           isOpen && '!rotate-180'
         }`}
       />

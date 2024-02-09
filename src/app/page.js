@@ -1,6 +1,7 @@
 import Faq from '@/components/Faq'
 import Contact from '@/components/Contact'
 import HowWorks from '@/components/HowWorks'
+import Footer from '@/components/Footer'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HowWorks />
       <Faq />
       <Contact />
+      <Footer />
     </main>
   )
 }

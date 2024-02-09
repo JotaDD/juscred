@@ -12,6 +12,10 @@
   background-color: #f0f0f0;
 } */
 
+body {
+  zoom: 1;
+}
+
 .toggle-button {
   width: 30px;
   height: 30px;

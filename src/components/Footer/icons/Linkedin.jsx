@@ -1,13 +1,22 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
- preserveAspectRatio="xMidYMid meet">
+import React from 'react'
 
-<g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill="#182D51" stroke="none">
-<path d="M2334 5110 c-502 -49 -973 -237 -1368 -548 -106 -82 -361 -344 -443
+function Linkedin() {
+  return (
+    <svg
+      version="1.0"
+      xmlns="http://www.w3.org/2000/svg"
+      width="512.000000pt"
+      height="512.000000pt"
+      viewBox="0 0 512.000000 512.000000"
+      preserveAspectRatio="xMidYMid meet"
+    >
+      <g
+        transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+        fill="#182D51"
+        stroke="none"
+      >
+        <path
+          d="M2334 5110 c-502 -49 -973 -237 -1368 -548 -106 -82 -361 -344 -443
 -452 -485 -649 -641 -1458 -428 -2233 159 -583 536 -1103 1046 -1445 519 -349
 1171 -495 1794 -403 721 107 1354 513 1767 1133 80 120 212 381 263 522 117
 319 171 703 147 1038 -13 191 -32 304 -77 484 -45 176 -91 297 -185 489 -132
@@ -19,6 +28,11 @@ fill="#182D51" stroke="none">
 627 -9 703 -95 803 -53 63 -113 87 -215 87 -73 1 -93 -3 -141 -27 -104 -51
 -172 -146 -189 -264 -5 -37 -10 -301 -10 -585 l0 -518 -305 0 -305 0 0 920 0
 920 305 0 305 0 1 -127 0 -128 32 40 c98 125 207 200 339 235 101 28 310 23
-413 -10z m-1735 -930 l0 -920 -305 0 -305 0 0 920 0 920 305 0 305 0 0 -920z"/>
-</g>
-</svg>
+413 -10z m-1735 -930 l0 -920 -305 0 -305 0 0 920 0 920 305 0 305 0 0 -920z"
+        />
+      </g>
+    </svg>
+  )
+}
+
+export default Linkedin

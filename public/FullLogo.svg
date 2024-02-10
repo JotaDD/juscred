@@ -1,8 +1,4 @@
-import React from 'react'
-
-function Logo() {
-  return (
-    <svg
+<svg
       width="252"
       height="57"
       viewBox="0 0 252 57"
@@ -574,7 +570,3 @@ function Logo() {
         </clipPath>
       </defs>
     </svg>
-  )
-}
-
-export default Logo

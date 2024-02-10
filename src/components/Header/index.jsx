@@ -6,8 +6,12 @@ import FooterInfo from './FooterInfo'
 function Header() {
   return (
     <div>
-      <NavBar />
-      <MidleInfo />
+      <div className="w-screen p-12 md:px-24 bg-[url(/HeaderImg.svg)] h-max bg-cover bg-center">
+        <div className="max-w-[1600px] mx-auto">
+          <NavBar />
+          <MidleInfo />
+        </div>
+      </div>
       <FooterInfo />
     </div>
   )

@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         'jc-dark-blue': '#182D51',
+        'jc-light-purple': '#6F6C90',
         'jc-light-yellow': '#FAC882',
         'jc-black': '#303030',
         'jc-white': '#EAEAEA',

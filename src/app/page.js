@@ -1,12 +1,17 @@
 import Faq from '@/components/Faq'
 import Contact from '@/components/Contact'
+import HowWorks from '@/components/HowWorks'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen container flex-col items-center justify-between ">
-      <h1 className="text-4xl font-bold mb-[800px]">Hello, World!</h1>
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <Header />
+      <HowWorks />
       <Faq />
       <Contact />
+      <Footer />
     </main>
   )
 }

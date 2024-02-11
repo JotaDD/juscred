@@ -3,12 +3,17 @@ import React, { useState } from 'react'
 import { IMaskInput } from 'react-imask'
 import formError from './formErrors'
 import wppMessage from './wppMessage'
+import { usePathname } from 'next/navigation'
 
 function Form() {
   const [validation, setValidation] = useState({
     isVlaid: false,
     message: '',
   })
+
+  const pathName = usePathname()
+  const isHome = pathName === '/'
+
   const [formValues, setForm] = useState({
     nome: '',
     telefone: '',
@@ -35,20 +40,28 @@ function Form() {
   }
 
   return (
-    <div className="flex flex-col gap-4">
-      <h3 className="text-jc-light-yellow text-xl xl:text-3xl font-bold">
-        Entre em contato conosco!
-      </h3>
-      <form className="grid grid-cols-1 lg:grid-cols-2 gap-y-5">
+    <div className="flex flex-col gap-4 w-full lg:ml-12 lg:max-w-[28rem]">
+      <div>
+        <h3 className="text-jc-light-yellow text-lg lg:text-2xl font-bold">
+          Entre em contato conosco!
+        </h3>
+        <p
+          className={`${isHome ? 'hidden' : ''} text-jc-light-yellow text-base`}
+        >
+          Preencha com seus dados o formulário ao lado e seja redirecionado
+          agora para o nosso WhatsApp.
+        </p>
+      </div>
+      <form className="grid grid-cols-1 mg:grid-cols-2 gap-y-5">
         <input
-          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 xl:text-xl"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-md"
           placeholder="Nome"
           value={formValues.nome}
           name="nome"
           onChange={(e) => handleChange(e)}
         />
         <IMaskInput
-          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 xl:text-xl"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-md"
           placeholder="Telefone"
           value={formValues.telefone}
           name="telefone"
@@ -56,7 +69,7 @@ function Form() {
           mask="(21) 00000-0000"
         />
         <IMaskInput
-          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 xl:text-xl"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-md"
           placeholder="CPF (opcional)"
           value={formValues.cpf}
           name="cpf"
@@ -64,14 +77,14 @@ function Form() {
           mask="000.000.000-00"
         />
         <input
-          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 xl:text-xl"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-md"
           placeholder="Devedor (opcional)"
           value={formValues.devedor}
           name="devedor"
           onChange={(e) => handleChange(e)}
         />
         <input
-          className="w-full p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 lg:col-span-2 xl:text-xl"
+          className="w-full p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 mg:col-span-2 text-md"
           placeholder="Número do processo (opcional)"
           value={formValues.processo}
           name="processo"
@@ -84,7 +97,7 @@ function Form() {
         <p className="text-red-500">{validation.message}</p>
       )}
       <button
-        className="bg-jc-light-yellow w-32 p-3 pt-4 rounded-md xl:text-xl text-center"
+        className="bg-jc-light-yellow w-32 p-3 pt-4 rounded-md text-lg text-center"
         onClick={() => handleSubmit()}
       >
         Tudo certo

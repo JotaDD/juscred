@@ -4,7 +4,7 @@ import faq from '@/data/faq'
 
 const Faq = () => {
   return (
-    <div className="container flex flex-col px-8 justify-center">
+    <div className="container flex flex-col px-8 justify-center items-center border">
       <Title />
       {faq.map((item, index) => (
         <Accordion

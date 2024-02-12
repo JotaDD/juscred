@@ -13,6 +13,7 @@ function NavBar() {
         alt="document image"
         width="350"
         height="1"
+        onClick={window.location.href('/')}
       />
 
       <ul className="hidden lg:flex gap-12">

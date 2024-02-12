@@ -97,10 +97,10 @@ function Form() {
         <p className="text-red-500">{validation.message}</p>
       )}
       <button
-        className="bg-jc-light-yellow w-32 p-3 pt-4 rounded-md text-lg text-center"
+        className={`${isHome ? 'w-32' : 'text-white w-56'} bg-jc-light-yellow  p-3 pt-4 rounded-md text-lg text-center`}
         onClick={() => handleSubmit()}
       >
-        Tudo certo
+        {isHome ? 'Tudo certo' : 'Entrar em contato'}
       </button>
     </div>
   )

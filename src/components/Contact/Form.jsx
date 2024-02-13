@@ -33,7 +33,7 @@ function Form() {
   function handleSubmit() {
     const error = formError(formValues)
     if (!error) {
-      window.location.href = `https://wa.me/+5521997221085/?text=Olá%20meu%20nome%20é%20${wppMessage(formValues.nome)}%0Agostaria%20de%20fazer%20um%20orçamento`
+      window.location.href = `https://wa.me/+5521997221085/?text=Olá,%20sou%20${wppMessage(formValues.nome)},%0ACPF:%20${formValues.cpf}%0Ae%20gostaria%20de%20solicitar%20o%20um%20orçamento!%0ADevedor:%20${formValues.devedor},%0ANúmero%20do%20processo:%20${formValues.processo}`
       setValidation({ isVlaid: false, message: '' })
     }
     setValidation({ isVlaid: true, message: error })
@@ -97,10 +97,10 @@ function Form() {
         <p className="text-red-500">{validation.message}</p>
       )}
       <button
-        className="bg-jc-light-yellow w-32 p-3 pt-4 rounded-md text-lg text-center"
+        className={`${isHome ? 'w-32' : 'text-white w-56'} bg-jc-light-yellow  p-3 pt-4 rounded-md text-lg text-center`}
         onClick={() => handleSubmit()}
       >
-        Tudo certo
+        {isHome ? 'Tudo certo' : 'Entrar em contato'}
       </button>
     </div>
   )

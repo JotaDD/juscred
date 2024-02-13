@@ -3,6 +3,7 @@ import Information from './Information'
 import SocialNetwork from './SocialNetwork'
 import AllRights from './AllRights'
 import GoldenLogo from './icons/GoldenLogo'
+import Link from 'next/link'
 
 function Footer() {
   return (
@@ -12,7 +13,9 @@ function Footer() {
       </h3>
       <div className="max-w-[1600px] m-auto grid grid-cols-1 gap-14 md:grid-cols-2 xl:gap-0 xl:grid-cols-3 items-end xl">
         <div className="col-span-1">
-          <GoldenLogo />
+          <Link href="/">
+            <GoldenLogo />
+          </Link>
         </div>
         <Information />
         <div className="md:col-span-2 xl:col-span-1">

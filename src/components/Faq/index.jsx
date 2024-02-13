@@ -1,18 +1,21 @@
-import Title from './Title'
+import Title from '../commons/Title'
 import Accordion from './Accordion'
+import AccordionWrapper from './AccordionWrapper'
 import faq from '@/data/faq'
 
 const Faq = () => {
   return (
-    <div className="container flex flex-col px-8 justify-center items-center border">
+    <div className="container border flex flex-col gap-2 mb-12 px-8 justify-center items-center">
       <Title />
-      {faq.map((item, index) => (
-        <Accordion
-          key={index}
-          title={item.title}
-          description={item.description}
-        />
-      ))}
+      <AccordionWrapper>
+        {faq.map((item, index) => (
+          <Accordion
+            key={index}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </AccordionWrapper>
     </div>
   )
 }

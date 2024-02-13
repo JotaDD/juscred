@@ -1,8 +1,6 @@
 const ButtonSVG = ({ isOpen }) => {
   return (
-    <div
-      className={`p-2 rounded w-fit bg-jc-${isOpen ? 'dark-blue' : 'white'}`}
-    >
+    <div className={`p-2 w-fit bg-jc-${isOpen ? 'dark-blue' : 'white'}`}>
       <svg
         className={`${isOpen ? 'fill-jc-white' : 'fill-jc-dark-blue'} shrink-0`}
         width="16"
@@ -14,7 +12,7 @@ const ButtonSVG = ({ isOpen }) => {
           width="16"
           height="2"
           rx="1"
-          className={`transform origin-center transition duration-300 ease-out ${
+          className={`transform origin-center transition duration-200 ease-out ${
             isOpen && '!rotate-180'
           }`}
         />
@@ -23,7 +21,7 @@ const ButtonSVG = ({ isOpen }) => {
           width="16"
           height="2"
           rx="1"
-          className={`transform origin-center rotate-90 transition duration-300 ease-out ${
+          className={`transform origin-center rotate-90 transition duration-200 ease-out ${
             isOpen && '!rotate-180'
           }`}
         />

@@ -3,20 +3,18 @@ import { useState } from 'react'
 import ButtonSVG from './ButtonSVG'
 const Accordion = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false)
-  //  border-b-2  border-gray-200
-  // details-animated opacity-0 transform -translate-y-5 transition duration-500 ease-in-out
   return (
-    <div className=" container p-4 shadow-md">
+    <div className=" container p-4 flex flex-col justify-center items-center rounded-md shadow-md lg:w-[45%] overflow-hidden ">
       <button
         className=" text-jc-dark-blue cursor-pointer font-bold flex justify-between items-center w-full "
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-left">{title}</span>
+        <span className="text-left text-sm md:text-base mr-1">{title}</span>
         <ButtonSVG isOpen={isOpen} />
       </button>
       <div
         className={`grid overflow-hidden transition-all duration-300 ease-in-out text-jc-light-purple text-sm
-        ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}
+        ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-3 ' : 'grid-rows-[0fr] opacity-0'}
         `}
       >
         <p className="w-[90%] overflow-hidden">{description}</p>

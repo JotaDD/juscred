@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function HowWorks() {
   return (
-    <div className="w-screen bg-white p-12 md:p-24">
+    <div id="how-works-component" className="w-screen bg-white p-12 md:p-24">
       <div className="flex justify-start md:justify-around max-w-[1600px] m-auto items-center">
         <div>
           <h2 className="text-jc-dark-blue text-3xl md:text-4xl pb-5">

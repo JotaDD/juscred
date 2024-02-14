@@ -3,7 +3,7 @@ import CustomHeader from '@/components/CustomHeader'
 import Footer from '@/components/Footer'
 import InformationContent from '@/components/InformationContent'
 import React from 'react'
-import content from './content'
+import content from '@/data/aboutUs'
 
 function QuemSomos() {
   return (

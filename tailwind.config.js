@@ -13,6 +13,7 @@ module.exports = {
       mg: '1176px',
       lg: '976px',
       xl: '1200px',
+      xl2: '1536px',
     },
     extend: {
       boxShadow: {

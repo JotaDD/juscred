@@ -1,6 +1,6 @@
 const AccordionWrapper = ({ children }) => {
   return (
-    <div className="wrapper container gap-3 w-[90%] lg:border border-red-400 flex justify-center items-center lg:justify-center flex-wrap lg:items-start  ">
+    <div className="wrapper container gap-6 w-[90%] flex justify-center items-center lg:justify-center flex-wrap lg:items-start  ">
       {children}
     </div>
   )

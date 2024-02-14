@@ -5,7 +5,10 @@ import faq from '@/data/faq'
 
 const Faq = () => {
   return (
-    <div className="container border flex flex-col gap-2 mb-12 px-8 justify-center items-center">
+    <div
+      id="faq-component"
+      className="container flex flex-col gap-2 mb-12 px-8 justify-center items-center"
+    >
       <Title />
       <AccordionWrapper>
         {faq.map((item, index) => (

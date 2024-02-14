@@ -8,7 +8,7 @@ function Title() {
   const isHome = pathName === '/'
 
   return (
-    <div className="w-full ">
+    <div className="w-fit ">
       <div className={`${isHome ? '' : 'hidden'} pb-12 lg:max-w-[24rem]`}>
         <h2 className="text-jc-light-yellow text-3xl lg:text-4xl font-bold">
           Solicite um orçamento sem qualquer custo ou compromisso.

@@ -40,36 +40,30 @@ function Form() {
   }
 
   return (
-    <div className="flex flex-col gap-4 w-full lg:ml-12 lg:max-w-[28rem]">
+    <div className="flex flex-col border gap-4 lg:ml-12 lg:max-w-[32rem]">
       <div>
         <h3 className="text-jc-light-yellow text-lg lg:text-2xl font-bold">
           Entre em contato conosco!
         </h3>
-        <p
-          className={`${isHome ? 'hidden' : ''} text-jc-light-yellow text-base`}
-        >
-          Preencha com seus dados o formulário ao lado e seja redirecionado
-          agora para o nosso WhatsApp.
-        </p>
       </div>
-      <form className="grid grid-cols-1 mg:grid-cols-2 gap-y-5">
+      <form className="grid w-full grid-cols-1 mg:grid-cols-2 gap-y-5">
         <input
-          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-md"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-xl"
           placeholder="Nome"
           value={formValues.nome}
           name="nome"
           onChange={(e) => handleChange(e)}
         />
         <IMaskInput
-          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-md"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-xl"
           placeholder="Telefone"
           value={formValues.telefone}
           name="telefone"
           onChange={(e) => handleChange(e)}
-          mask="(21) 00000-0000"
+          mask="(00) 00000-0000"
         />
         <IMaskInput
-          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-md"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-xl"
           placeholder="CPF (opcional)"
           value={formValues.cpf}
           name="cpf"
@@ -77,14 +71,14 @@ function Form() {
           mask="000.000.000-00"
         />
         <input
-          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-md"
+          className="p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 text-xl"
           placeholder="Devedor (opcional)"
           value={formValues.devedor}
           name="devedor"
           onChange={(e) => handleChange(e)}
         />
         <input
-          className="w-full p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 mg:col-span-2 text-md"
+          className="w-full p-3 pt-4 outline-none placeholder-jc-dark-blue placeholder:opacity-75 focus:placeholder-zinc-100 border-t-jc-dark-blue border-x-[0.5px] focus:bg-zinc-100 mg:col-span-2 text-xl"
           placeholder="Número do processo (opcional)"
           value={formValues.processo}
           name="processo"
@@ -97,7 +91,7 @@ function Form() {
         <p className="text-red-500">{validation.message}</p>
       )}
       <button
-        className={`${isHome ? 'w-32' : 'text-white w-56'} bg-jc-light-yellow  p-3 pt-4 rounded-md text-lg text-center`}
+        className={`${isHome ? ' w-[10rem] ' : 'text-white w-56'} bg-jc-light-yellow p-1 pt-2  rounded-md text-lg text-center`}
         onClick={() => handleSubmit()}
       >
         {isHome ? 'Tudo certo' : 'Entrar em contato'}

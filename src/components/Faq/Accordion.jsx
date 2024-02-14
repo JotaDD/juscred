@@ -4,7 +4,7 @@ import ButtonSVG from './ButtonSVG'
 const Accordion = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className=" container p-4 flex flex-col justify-center items-center rounded-md shadow-md lg:w-[45%] overflow-hidden ">
+    <div className=" container p-4 flex flex-col justify-center items-center rounded-md shadow-md overflow-hidden ">
       <button
         className=" text-jc-dark-blue cursor-pointer font-bold flex justify-between items-center w-full "
         onClick={() => setIsOpen(!isOpen)}
@@ -13,7 +13,7 @@ const Accordion = ({ title, description }) => {
         <ButtonSVG isOpen={isOpen} />
       </button>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-jc-light-purple text-sm
+        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-jc-light-purple text-sm 
         ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-3 ' : 'grid-rows-[0fr] opacity-0'}
         `}
       >

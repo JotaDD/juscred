@@ -1,6 +1,8 @@
 const ButtonSVG = ({ isOpen }) => {
   return (
-    <div className={`p-2 w-fit bg-jc-${isOpen ? 'dark-blue' : 'white'}`}>
+    <div
+      className={`p-2 w-fit rounded-md bg-jc-${isOpen ? 'dark-blue' : 'white'}`}
+    >
       <svg
         className={`${isOpen ? 'fill-jc-white' : 'fill-jc-dark-blue'} shrink-0`}
         width="16"

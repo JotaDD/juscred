@@ -1,4 +1,3 @@
-import CustomHeader from '../CustomHeader'
 import InformationContent from '../InformationContent'
 import content from '@/data/aboutUs'
 const index = () => {

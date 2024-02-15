@@ -40,7 +40,7 @@ function Form() {
   }
 
   return (
-    <div className="flex flex-col border gap-4 lg:ml-12 lg:max-w-[32rem]">
+    <div className="flex flex-col gap-4 lg:ml-12 lg:max-w-[32rem]">
       <div>
         <h3 className="text-jc-light-yellow text-lg lg:text-2xl font-bold">
           Entre em contato conosco!

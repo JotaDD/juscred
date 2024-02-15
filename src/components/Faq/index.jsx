@@ -7,7 +7,7 @@ const Faq = () => {
   return (
     <div
       id="faq-component"
-      className="container flex flex-col gap-2 mb-12 px-8 justify-center items-center"
+      className="container flex flex-col gap-2 mb-12 px-8 justify-center items-center pt-16 lg:pt-0"
     >
       <Title />
       <AccordionWrapper>

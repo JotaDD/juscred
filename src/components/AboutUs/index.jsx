@@ -4,7 +4,7 @@ import content from '@/data/aboutUs'
 const index = () => {
   return (
     <div id="about-us-component">
-      <InformationContent title="Sobre Juscred" contentArray={content} />
+      <InformationContent title="Sobre a Juscred" contentArray={content} />
     </div>
   )
 }

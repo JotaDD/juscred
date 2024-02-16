@@ -14,6 +14,9 @@ function Information() {
         <p className="text-jc-dark-blue font-bold opacity-75">
           CNPJ: 53.594.915/0001-39
         </p>
+        <p className="text-jc-dark-blue font-bold opacity-75">
+          Telefone WhatsApp: (18) 99690-1111
+        </p>
       </div>
     </div>
   )

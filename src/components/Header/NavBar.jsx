@@ -25,16 +25,16 @@ function NavBar() {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [header])
-
+  // "w-52 lg:w-64"
   return (
     <header
-      className={`flex justify-center items-center  w-full py-3 fixed top-0 left-0 z-[9999]
+      className={`flex justify-center items-center py-3 w-full fixed top-0 left-0 z-[9999]
       ${header || menuOn ? 'bg-jc-dark-blue ' : 'bg-transparent'}`}
     >
-      <div className="flex justify-between items-center w-[80%] lg:w-[85%] max-w-[1400px] py-5">
+      <div className="flex justify-between items-center w-[80%] lg:w-[85%] max-w-[1400px] py-1">
         <Link href="/">
           <Image
-            className="w-52 lg:w-64"
+            className="w-48"
             src="/FullLogo.svg"
             alt="document image"
             width="350"

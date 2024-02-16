@@ -9,7 +9,7 @@ const Faq = () => {
       id="faq-component"
       className="container flex flex-col gap-2 mb-12 px-8 justify-center items-center pt-16 lg:pt-0"
     >
-      <Title />
+      <Title title="Perguntas frequentes" />
       <AccordionWrapper>
         {faq.map((item, index) => (
           <Accordion

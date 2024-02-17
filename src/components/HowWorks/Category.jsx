@@ -3,7 +3,7 @@ import React from 'react'
 
 function Category() {
   return (
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col gap-16 max-w-[40rem]">
       <div className="flex justify-center items-center max-w-3xl gap-6">
         <Image
           className="hidden md:block xl:block fill-jc-dark-blue w-20 xl:w-[6.5rem]"

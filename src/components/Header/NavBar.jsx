@@ -31,10 +31,10 @@ function NavBar() {
       className={`flex justify-center items-center py-3 w-full fixed top-0 left-0 z-[9999]
       ${header || menuOn ? 'bg-jc-dark-blue ' : 'bg-transparent'}`}
     >
-      <div className="flex justify-between items-center w-[80%] lg:w-[85%] max-w-[1400px] py-1">
+      <div className="flex justify-between items-center w-[80%] lg:w-[85%] max-w-[1400px] py-2">
         <Link href="/">
           <Image
-            className="w-48"
+            className="w-48 lg:w-56"
             src="/FullLogo.svg"
             alt="document image"
             width="350"

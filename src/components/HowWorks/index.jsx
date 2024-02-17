@@ -13,7 +13,7 @@ function HowWorks() {
           <Category />
         </div>
 
-        <div className="max-w-96 lg:w-[25%] lg:h-[35rem]">
+        <div className="max-w-96 lg:w-[30%] lg:h-[35rem]">
           <Image
             className="hidden lg:block ml-4 object-cover w-[350px] h-[550px]"
             src="/doc.png"

@@ -35,7 +35,7 @@ function NavBar() {
         <Link href="/">
           <Image
             className="w-48"
-            src="/FullLogo.svg"
+            src="/FullLogo.png"
             alt="document image"
             width="350"
             height="1"

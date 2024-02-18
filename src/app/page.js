@@ -7,7 +7,7 @@ import AboutUs from '@/components/AboutUs'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col w-full items-center justify-center">
+    <main className="flex min-h-screen bg-white flex-col w-full items-center justify-center">
       <Header />
       <HowWorks />
       <AboutUs />

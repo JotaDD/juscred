@@ -1,13 +1,12 @@
 'use client'
 import { useState } from 'react'
 import ButtonSVG from './ButtonSVG'
-const Accordion = ({ title, description }) => {
-  const [isOpen, setIsOpen] = useState(false)
+const Accordion = ({ title, description, toggle, isOpen }) => {
   return (
     <div className=" container p-4 flex flex-col justify-center items-center rounded-md shadow-md overflow-hidden ">
       <button
         className=" text-jc-dark-blue cursor-pointer font-bold flex justify-between items-center w-full "
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={toggle}
       >
         <span className="text-left text-sm md:text-base mr-1">{title}</span>
         <ButtonSVG isOpen={isOpen} />

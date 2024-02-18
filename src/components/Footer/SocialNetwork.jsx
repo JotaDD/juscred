@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 function SocialNetwork() {
   return (
-    <div className="flex flex-col justify-center items-center gap-3">
+    <div className="flex lg:mx-10 flex-col mt-10 lg:mt-0 justify-center items-center gap-3">
       <h4 className="text-jc-dark-blue font-bold opacity-85 text-xl">
         Nossas Redes Sociais
       </h4>

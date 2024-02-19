@@ -25,7 +25,7 @@ function NavBar() {
   }, [header])
   return (
     <header
-      className={`flex justify-center items-center lg:items-baseline pt-3 lg:pt-0 border w-full fixed top-0 left-0 z-[99]
+      className={`flex justify-center items-center lg:items-baseline pt-3 lg:pt-0 w-full fixed top-0 left-0 z-[99]
       ${header || menuOn ? 'bg-jc-dark-blue lg:transition-all lg:duration-500 lg:ease-in-out ' : 'bg-transparent'}`}
     >
       <div className="flex  justify-between items-center w-[80%] lg:w-[80%] max-w-[1400px] py-1">

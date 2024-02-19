@@ -10,7 +10,7 @@ function Header() {
         id="home-component"
         className="w-full p-12 md:px-24 bg-[url(/HeaderImg.svg)] h-max bg-cover bg-center flex flex-col items-start  justify-center"
       >
-        <div className="mt-10 xl2:mx-[10%] max-w-[1200px]">
+        <div className=" xl2:mx-[30%] lg:mx-16 flex max-w-[1200px]">
           <NavBar />
           <MidleInfo />
         </div>

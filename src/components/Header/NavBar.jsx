@@ -25,7 +25,7 @@ function NavBar() {
   }, [header])
   return (
     <header
-      className={`flex justify-center items-center lg:items-baseline pt-3 lg:pt-0   w-full fixed top-0 left-0 z-[9999]
+      className={`flex justify-center items-center lg:items-baseline pt-3 lg:pt-0   w-full fixed top-0 left-0 z-[99]
       ${header || menuOn ? 'bg-jc-dark-blue lg:transition-all lg:duration-500 lg:ease-in-out ' : 'bg-transparent'}`}
     >
       <div className="flex  justify-between items-center w-[80%] lg:w-[85%] max-w-[1400px] py-1">
@@ -35,10 +35,9 @@ function NavBar() {
             className={`
               ${
                 header || menuOn
-                  ? 'w-48 lg:transition-all lg:duration-500 lg:ease-in-out '
+                  ? 'w-48 md:w-60 lg:transition-all lg:duration-500 lg:ease-in-out md:z-50 '
                   : 'w-48 md:w-60 lg:w-[22rem] lg:mt-6 lg:transition-all lg:duration-500 lg:ease-in-out'
-              }
-               flex-1 `}
+              } flex-1 `}
             src="/FullLogo.png"
             alt="document image"
             width="350"
@@ -121,7 +120,7 @@ function NavBar() {
           <MenuIcon isOpen={menuOn} />
         </button>
         <ul
-          className={`${menuOn ? 'flex bg-jc-dark-blue ' : 'hidden'} lg:hidden  flex-col items-center fixed inset-0 top-16 w-full p-5 pt-10 pb-10  backdrop-blur-md`}
+          className={`${menuOn ? 'flex bg-jc-dark-blue ' : 'hidden'} lg:hidden md:mt-3  flex-col items-center fixed inset-0 top-16 w-full p-5 pt-10 pb-10  backdrop-blur-md`}
         >
           <li className=" mb-1 text-center border-b-[0.5px] w-[80%] text-xl pt-3 pb-2 text-jc-white font-semibold">
             <ReactLink

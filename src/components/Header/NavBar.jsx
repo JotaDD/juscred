@@ -28,7 +28,7 @@ function NavBar() {
       className={`flex justify-center items-center lg:items-baseline pt-3 lg:pt-0 w-full fixed top-0 left-0 z-[99]
       ${header || menuOn ? 'bg-jc-dark-blue lg:transition-all lg:duration-500 lg:ease-in-out ' : 'bg-transparent'}`}
     >
-      <div className="flex  justify-between items-center w-[80%] lg:w-[80%] max-w-[1400px] py-1">
+      <div className="flex  justify-between items-center w-[80%] lg:w-[85%] max-w-[1400px] py-1">
         <Link href="/">
           <Image
             // className='w-48'
@@ -46,7 +46,7 @@ function NavBar() {
         </Link>
         {/* Menu for desktop */}
         <ul
-          className={`${menuOn ? 'hidden' : ''}  lg:items-baseline hidden lg:flex gap-6`}
+          className={`${menuOn ? 'hidden' : ''}  lg:items-baseline hidden lg:flex `}
         >
           <li className="text-jc-white p-4 rounded-lg hover:text-jc-light-yellow hover:transition-colors hover:duration-500 hover:bg-opacity-10">
             <ReactLink

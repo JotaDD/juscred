@@ -34,8 +34,9 @@ function NavBar() {
       <div className="flex justify-between items-center w-[80%] lg:w-[85%] max-w-[1400px] py-2">
         <Link href="/">
           <Image
-            className="w-48 lg:w-56"
-            src="/FullLogo.svg"
+            className="w-48"
+            src="/FullLogo.png"
+
             alt="document image"
             width="350"
             height="1"

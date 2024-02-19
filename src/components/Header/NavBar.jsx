@@ -23,22 +23,22 @@ function NavBar() {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [header])
-  // "w-52 lg:w-64"
-  // transition-all duration-500 ease-in-out
   return (
     <header
-      className={`flex justify-center  items-baseline pt-1 w-full fixed top-0 left-0 z-[9999]
-      ${header || menuOn ? 'bg-jc-dark-blue lg:transition-all lg:duration-500 lg:ease-in-out  ' : 'bg-transparent'}`}
+      className={`flex justify-center items-center lg:items-baseline pt-3 lg:pt-0   w-full fixed top-0 left-0 z-[9999]
+      ${header || menuOn ? 'bg-jc-dark-blue lg:transition-all lg:duration-500 lg:ease-in-out ' : 'bg-transparent'}`}
     >
-      <div className="flex justify-between items-center w-[80%] lg:w-[85%] max-w-[1400px] py-1">
+      <div className="flex  justify-between items-center w-[80%] lg:w-[85%] max-w-[1400px] py-1">
         <Link href="/">
           <Image
             // className='w-48'
-            className={
-              header || menuOn
-                ? 'w-48 lg:transition-all lg:duration-500 lg:ease-in-out '
-                : 'lg:w-96 lg:mt-6 lg:transition-all lg:duration-500 lg:ease-in-out'
-            }
+            className={`
+              ${
+                header || menuOn
+                  ? 'w-48 lg:transition-all lg:duration-500 lg:ease-in-out '
+                  : 'w-48 md:w-60 lg:w-[22rem] lg:mt-6 lg:transition-all lg:duration-500 lg:ease-in-out'
+              }
+               flex-1 `}
             src="/FullLogo.png"
             alt="document image"
             width="350"
@@ -47,7 +47,7 @@ function NavBar() {
         </Link>
         {/* Menu for desktop */}
         <ul
-          className={`${menuOn ? 'hidden' : ''} lg:items-baseline hidden lg:flex gap-6`}
+          className={`${menuOn ? 'hidden' : ''}  lg:items-baseline hidden lg:flex gap-6`}
         >
           <li className="text-jc-white p-4 rounded-lg hover:text-jc-light-yellow hover:transition-colors hover:duration-500 hover:bg-opacity-10">
             <ReactLink

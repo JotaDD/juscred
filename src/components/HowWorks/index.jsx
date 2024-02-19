@@ -17,7 +17,6 @@ function HowWorks() {
         </div>
 
         <div className="max-w-96 flex-auto lg:pl-10 lg:h-[35rem]">
-
           <Image
             className="hidden lg:block ml-4 object-cover w-full h-full"
             src="/doc.png"

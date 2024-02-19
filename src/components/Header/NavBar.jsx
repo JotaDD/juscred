@@ -1,11 +1,9 @@
 'use client'
 
-import Link from 'next/link'
 import Image from 'next/image'
-import { Link as ReactLink } from 'react-scroll'
-import Bars from './icons/Bars'
+import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import Close from './icons/Close'
+import { Link as ReactLink } from 'react-scroll'
 import MenuIcon from '../MenuIcon'
 
 function NavBar() {

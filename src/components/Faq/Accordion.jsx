@@ -1,5 +1,3 @@
-'use client'
-import { useState } from 'react'
 import ButtonSVG from './ButtonSVG'
 const Accordion = ({ title, description, toggle, isOpen }) => {
   return (

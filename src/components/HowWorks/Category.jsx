@@ -14,13 +14,12 @@ function Category() {
         />
         <div>
           <h3 className="text-jc-dark-blue font-bold text-xl md:text-2xl">
-            Análise do crédito e formulação da proposta
+            Análise do Crédito e Proposta de Pagamento
           </h3>
           <p className="text-jc-dark-blue text-md md:text-lg">
-            A partir da análise da Ação Judicial do interessado e aprovação das
-            condições para a cessão do crédito, a JUSCRED PRECATÓRIOS formulará
-            uma proposta de pagamento baseada no valor envolvido, estágio da
-            ação judicial, tipo de devedor, entre outros.
+            Após analisarmos sua Ação Judicial, formulamos uma proposta de
+            pagamento baseada em diversos fatores, como o valor envolvido e o
+            estágio do processo.
           </p>
         </div>
       </div>
@@ -34,12 +33,11 @@ function Category() {
         />
         <div>
           <h3 className="text-jc-dark-blue font-bold text-xl md:text-2xl">
-            Aceitação da Proposta e Contratação
+            AAceitação da Proposta e Contratação
           </h3>
           <p className="text-jc-dark-blue text-md md:text-lg">
-            Aceita a proposta pelo interessado, será elaborado o Contrato ou
-            Escritura Pública de Cessão de Direitos Creditórios e agendada uma
-            data para a assinatura conjunta em cartório.
+            Se você aceitar nossa proposta, elaboramos o contrato de cessão de
+            direitos creditórios e agendamos a assinatura conjunta em cartório.
           </p>
         </div>
       </div>
@@ -53,12 +51,12 @@ function Category() {
         />
         <div>
           <h3 className="text-jc-dark-blue font-bold text-xl md:text-2xl">
-            Pagamento Imediato e substituição processual
+            Pagamento Imediato e Substituição Processual
           </h3>
           <p className="text-jc-dark-blue text-md md:text-lg">
-            Assinado o contrato ou a Escritura Pública em cartório, o pagamento
-            do valor combinado é realizado no ato, por meio do PIX e toda a
-            transação é informada ao Juiz de Direito na ação judicial.
+            Assinado o contrato em cartório, efetuamos o pagamento imediato do
+            valor combinado via PIX e informamos toda a transação ao Juiz de
+            Direito responsável pela ação judicial.
           </p>
         </div>
       </div>

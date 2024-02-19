@@ -1,35 +1,34 @@
 const faq = [
   {
-    title: 'A atividade da JUSCRED PRECATÓRIOS é regulamentada por lei? ',
+    title: 'A JUSCRED PRECATÓRIOS é uma atividade legalmente regulamentada? ',
     description:
-      'Sim, a negociação de precatórios é autorizada pelo art. 100, § 13º da Constituição Federal e os demais créditos judiciais pelos arts. 286 e seguintes do Código Civil, além contar com ampla regulamentação dos próprios Tribunais de Justiça Estaduais que estabelecem normas para a substituição das partes nos procedimentos judiciais em curso.',
+      'Sim, a negociação de precatórios é permitida pela Constituição Federal (art. 100 § 13º) e outros créditos judiciais são regulamentados pelo Código Civil (arts. 286 e seguintes), além contar com ampla regulamentação dos próprios Tribunais de Justiça Estaduais que estabelecem normas para a substituição das partes nos procedimentos judiciais em curso.',
   },
   {
-    title: '​Como ficam os custos com os honorários do meu advogado?',
+    title: 'Como funcionam os custos com os honorários do meu advogado?',
     description:
-      'O seu advogado terá o direito ao recebimento dos honorários em qualquer situação. Esses honorários incidem sob 02 (duas) formas, sendo a primeira relativa aos Honorários Advocatícios Sucumbenciais, devidos pela parte derrotada no processo ao advogado da parte vencedora, cuja cobrança fica mantida e compete ao referido profissional. A segunda forma são os Honorários Advocatícios Contratuais, devidos diretamente pelo cliente ao seu advogado, geralmente de acordo com o êxito da ação judicial. Nesse último caso, havendo contratação de Honorários Advocatícios Contratuais, o percentual contratado ficará reservado ao profissional do direito, que poderá exercer a opção de receber junto com o cliente na proporção do crédito antecipado ou aguardar o fim do processo e receber o valor integral juntamente com a JUSCRED PRECATÓRIOS.',
+      'Seu advogado tem direito aos honorários em qualquer situação. Existem dois tipos: honorários advocatícios sucumbenciais, pagos pela parte derrotada ao advogado da parte vencedora, e honorários advocatícios contratuais, pagos diretamente pelo cliente ao advogado, geralmente baseados no sucesso da ação judicial. No caso de honorários advocatícios contratados, o profissional pode optar por receber uma parte junto com o cliente, com base no crédito antecipado, ou esperar até o fim do processo para receber o valor total junto com a JUSCRED PRECATÓRIOS.',
+  },
+  {
+    title: 'Como posso saber se a JUSCRED PRECATÓRIOS é confiável?',
+    description:
+      'A JUSCRED PRECATÓRIOS possui sede em Assis/SP regularmente constituída perante a JUCESP e inscrita na Receita Federal sob o CNPJ n.º 53.594.915/0001-39 e sócios com vasta experiência na área judicial. Além disso, fornecemos orçamento e proposta sem custo ou compromisso, ou seja, os interessados não precisam pagar nenhum valor para obter o orçamento e decidir pela contratação.',
+  },
+  {
+    title: 'Quanto tempo leva para analisar meu crédito?',
+    description:
+      'A análise de crédito geralmente leva cerca de 72 horas, após o cliente fornecer todas as informações necessárias. Após a aprovação, o contrato é elaborado e o pagamento é feito imediatamente via PIX.',
   },
   {
     title:
-      '​Como saber se a JUSCRED PRECATÓRIOS tem solidez e oferece confiança?',
+      'Quais são os critérios considerados na análise de crédito e proposta?',
     description:
-      'A JUSCRED PRECATÓRIOS tem sua sede na cidade de Assis/SP, onde seus sócios atuam na área dos serviços judiciais, um deles há mais de 28 anos, ambos prontos para prestar um atendimento presencial aos seus clientes, sendo esse um dos principais diferenciais nesse segmento. Trata-se de empresa regularmente constituída perante a JUCESP e inscrita na Receita Federal sob o CNPJ n.º 53.594.915/0001-39 e sua atividade está regida autorizada pelo art. 100, § 13º da Constituição Federal e os demais créditos pelos arts. 286 e seguintes do Código Civil.',
+      'A análise considera os riscos envolvidos na consolidação do crédito judicial e fatores como prazos estimados de pagamento. A proposta leva em conta descontos obrigatórios, como honorários advocatícios, contribuições previdenciárias e imposto de renda.',
   },
   {
-    title: '​Quanto tempo demora em média toda a análise de crédito?',
+    title: 'Que tipos de ações judiciais e créditos podem ser negociados?',
     description:
-      'A partir do momento que todas as informações são repassadas pelo cliente à JUSCRED PRECATÓRIOS, o prazo para a conclusão da análise de crédito gira em torno de 72 (setenta e duas) horas devido a necessidade da obtenção de certidões dos cartórios distribuidores judiciais, podendo acontecer bem antes disso. Aprovado o crédito e aceita a proposta pelo cliente, o contrato será imediatamente elaborado e agendada a data para sua assinatura em Cartório e pagamento do valor combinado via PIX no mesmo ato.',
-  },
-  {
-    title:
-      '​Quais são os elementos levados em conta para a análise de crédito e formulação da proposta?',
-    description:
-      'A análise de crédito leva em conta os riscos envolvidos na consolidação do crédito judicial (impugnações, recursos, penhoras de terceiros, etc.), bem como o prazo estimado para que o precatório possa ser cadastrado ou efetivamente pago. A formulação da proposta considera dentre outros elementos, além do deságio peculiar desse tipo de operação, os descontos obrigatórios que incidirão sobre o valor do crédito bruto do cliente, tais como os honorários advocatícios contratuais do seu advogado, eventual contribuição previdenciária e imposto de renda a serem retidos por ocasião da quitação do crédito.',
-  },
-  {
-    title: '​Quais tipos de ações judiciais e créditos podem ser negociados?',
-    description:
-      'Praticamente todo tipo de ação que tenha crédito constituído comporta negociação para sua antecipação, cuja análise de crédito será feita caso a caso. A JUSCRED PRECATÓRIOS tem sua especialidade na negociação de precatórios e RPV’s (créditos constituídos contra Prefeituras, Estados, DF ou União), mas não descarta a análise de créditos constituídos perante instituições financeiras e empresas. Faça sua cotação sem qualquer custo ou compromisso!',
+      'Quase todos os tipos de ações com créditos constituídos podem ser negociados, incluindo precatórios, RPVs, créditos contra Prefeituras, Estados, DF ou União, e até mesmo créditos contra instituições financeiras e empresas. Oferecemos cotação sem compromisso.',
   },
 ]
 export default faq

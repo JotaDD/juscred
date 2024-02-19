@@ -33,7 +33,7 @@ function Category() {
         />
         <div>
           <h3 className="text-jc-dark-blue font-bold text-xl md:text-2xl">
-            AAceitação da Proposta e Contratação
+            Aceitação da Proposta e Contratação
           </h3>
           <p className="text-jc-dark-blue text-md md:text-lg">
             Se você aceitar nossa proposta, elaboramos o contrato de cessão de

@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/joaogomes/www/juscred/juscred/src/app/layout":["static/media/c811773b973188c9-s.p.woff2","static/media/1d7c24ead3eca7a2-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';

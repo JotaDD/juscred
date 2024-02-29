@@ -5,7 +5,7 @@ import { Link } from 'react-scroll'
 
 function MidleInfo() {
   return (
-    <div className=" lg:mt-24 pt-20 pb-16">
+    <div className="max-w-[1200px] lg:mt-24 pt-20 pb-16">
       <h1 className="text-jc-white max-w-[485px] text-2xl mb-2 font-bold">
         Possui crédito judicial e não quer esperar até o fim do processo para
         receber?

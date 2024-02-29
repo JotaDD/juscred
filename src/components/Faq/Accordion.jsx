@@ -10,8 +10,8 @@ const Accordion = ({ title, description, toggle, isOpen }) => {
         <ButtonSVG isOpen={isOpen} />
       </button>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-jc-light-purple text-sm 
-        ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-3 ' : 'grid-rows-[0fr] opacity-0'}
+        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-jc-light-purple text-sm  w-full
+        ${isOpen ? 'grid-rows-[1fr] opacity-100 mt-3 ' : 'grid-rows-[0fr] opacity-0 '}
         `}
       >
         <p className="w-[90%] overflow-hidden">{description}</p>
@@ -20,16 +20,4 @@ const Accordion = ({ title, description, toggle, isOpen }) => {
   )
 }
 
-/**
- *  <details
-        className=" text-jc-light-purple text-sm flex justify-between cursor-pointer p-4 shadow-md"
-        onToggle={() => setIsOpen(!isOpen)}
-      >
-        <summary className="  text-jc-dark-blue cursor-pointer font-bold flex justify-between items-center ">
-          <span>{title}</span>
-          <ButtonSVG isOpen={isOpen} />
-        </summary>
-        <p className="w-[90%]">{description}</p>
-      </details>
- */
 export default Accordion

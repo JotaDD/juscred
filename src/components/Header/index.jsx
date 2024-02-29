@@ -5,18 +5,18 @@ import FooterInfo from './FooterInfo'
 
 function Header() {
   return (
-    <div>
+    <>
+      <NavBar />
       <div
         id="home-component"
-        className="w-full p-12 md:px-24 bg-[url(/HeaderImg.svg)] h-max bg-cover bg-center flex flex-col items-start  justify-center"
+        className="w-full p-12 md:px-24 bg-[url(/HeaderImg.svg)] h-max bg-cover bg-center flex flex-col items-center  justify-center"
       >
-        <div className=" xl2:mx-[30%] lg:mx-16 flex max-w-[1200px]">
-          <NavBar />
+        <div className=" max-w-[1200px] md:w-[80%]">
           <MidleInfo />
         </div>
       </div>
       <FooterInfo />
-    </div>
+    </>
   )
 }
 

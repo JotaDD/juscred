@@ -5,7 +5,7 @@ function Information() {
     <div className="lg:w-[26rem] lg:mx-10 lg:mr-16  flex flex-col justify-center items-center md:col-span-1">
       <div className="mx-auto">
         <h3 className="text-jc-dark-blue text-xl font-bold w-full text-center my-8 lg:my-0 lg:flex">
-          Juscred Precatórios e Ativos Ltda.
+          Juscred Precatórios e Ativos Judiciais Ltda.
         </h3>
         <div>
           <p className="text-jc-dark-blue font-bold opacity-75">

@@ -6,7 +6,7 @@ function Category() {
     <div className="flex  flex-col gap-16">
       <div className="flex flex-auto justify-center items-center max-w-2xl gap-6">
         <Image
-          className="hidden md:block xl:block fill-jc-dark-blue w-20 xl:w-[6.5rem]"
+          className="hidden md:block xl:block fill-jc-dark-blue w-24 xl:w-[6.5rem]"
           src="/Idoc.svg"
           alt="doc search"
           width="90"
@@ -25,7 +25,7 @@ function Category() {
       </div>
       <div className="flex justify-center items-center max-w-2xl gap-6">
         <Image
-          className="hidden md:block xl:block fill-jc-dark-blue w-20 xl:w-24 "
+          className="hidden md:block xl:block fill-jc-dark-blue w-24 xl:w-24 "
           src="/Icontrato.svg"
           alt="doc search"
           width="104"
@@ -41,22 +41,22 @@ function Category() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center max-w-2xl gap-6">
+      <div className="flex justify-center  items-center max-w-2xl gap-6">
         <Image
-          className="hidden md:block xl:block fill-jc-dark-blue w-20 xl:w-24 "
-          src="/Iforma-de-pagamento.svg"
-          alt="doc search"
+          className="hidden md:block xl:block fill-jc-dark-blue w-24 xl:w-24 "
+          src="/pix.svg"
+          alt="pix"
           width="104"
           height="90"
         />
         <div>
           <h3 className="text-jc-dark-blue font-bold text-xl md:text-2xl">
-            Pagamento Imediato e Substituição Processual
+            Receba seu PIX imediatamente
           </h3>
           <p className="text-jc-dark-blue text-md md:text-lg">
-            Assinado o contrato em cartório, efetuamos o pagamento imediato do
-            valor combinado via PIX e informamos toda a transação ao Juiz de
-            Direito responsável pela ação judicial.
+            Assinado o contrato ou a Escritura Pública em cartório, o pagamento
+            do valor combinado é realizado no ato, por meio do PIX e toda a
+            transação é informada ao Juiz de Direito na ação judicial.
           </p>
         </div>
       </div>

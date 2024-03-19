@@ -4,9 +4,9 @@ import React from 'react'
 function Category() {
   return (
     <div className="flex  flex-col gap-16">
-      <div className="flex flex-auto justify-center items-center max-w-2xl gap-6">
+      <div className="flex justify-center items-start md:items-center  max-w-2xl gap-3 md:gap-6">
         <Image
-          className="hidden md:block xl:block fill-jc-dark-blue w-24 xl:w-[6.5rem]"
+          className="w-8 fill-jc-dark-blue md:w-20 lg:w-24 xl:w-[6.5rem]"
           src="/Idoc.svg"
           alt="doc search"
           width="90"
@@ -23,9 +23,9 @@ function Category() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center items-center max-w-2xl gap-6">
+      <div className="flex justify-center items-start md:items-center max-w-2xl gap-3 md:gap-6">
         <Image
-          className="hidden md:block xl:block fill-jc-dark-blue w-24 xl:w-24 "
+          className="w-8 fill-jc-dark-blue md:w-20 lg:w-24 xl:w-[6.5rem]"
           src="/Icontrato.svg"
           alt="doc search"
           width="104"
@@ -41,9 +41,9 @@ function Category() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center  items-center max-w-2xl gap-6">
+      <div className="flex justify-center items-start md:items-center  max-w-2xl gap-3 md:gap-6">
         <Image
-          className="hidden md:block xl:block fill-jc-dark-blue w-24 xl:w-24 "
+          className="w-8 fill-jc-dark-blue md:w-20 lg:w-24 xl:w-[6.5rem]"
           src="/pix.svg"
           alt="pix"
           width="104"
